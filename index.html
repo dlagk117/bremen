@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	html { 
+ 	 background: url(farm.jpg); no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+ 	 background-size: cover;
+	}	
+	.bvb{position: absolute;}
+	.breman{ position: absolute; opacity: 0.5; transform: rotate(0deg);  transition: all ease 0.5s; }
+	.breman:hover {transform: rotate( 15deg ) ;}	
+	.man{ position: absolute; opacity: 1;  }
+	footer{background: black; color: white; position: absolute; top: 1300px; width: 50%}
+
+
+	</style>
+</head>
+<body>
+<div class="bvb">
+	<img src="hiphop.gif" class="man" id="br5" style="width: 280px; top: 350px; left:1000px;">	
+	<audio src="hiphip.mp3" id="hip" loop ></audio>	
+	<img src="donkey.png" class="breman" id="br1" style="width: 470px; top: 400px; left: 50px;">
+	<audio src="donkey1.mp3" loop id="don"></audio>
+	<img src="dog.png" class="breman" id="br2" style="width: 400px; top: 220px; left: 80px;">
+	<audio src="dog1.mp3" loop id="dogg"></audio>
+	<img src="cat.png" class="breman"  id="br3" style="width: 330px; top: 100px; left: 50px;">
+	<audio src="cat1.mp3" loop id="ca"></audio>
+	<img src="chicken.png" class="breman" id="br4" style="width: 180px; top: 10px; left: 90px;">
+	<audio src="chicken1.mp3" loop id="chick"></audio>
+
+</div>
+
+<script type="text/javascript">
+	
+	var br1state = "off";
+	br1.onclick = function(){
+		if(br1state == "off"){
+		br1.style.opacity = "1";
+		don.play();
+		br1state = "on";
+		}else{
+			br1.style.opacity = "0.5";
+			don.pause();
+			br1state = "off";
+		}
+	}
+
+
+	var br2state = "off";
+	br2.onclick = function(){
+		if(br2state == "off"){
+		br2.style.opacity = "1";
+		dogg.play();
+		br2state = "on";
+		}else{
+			br2.style.opacity = "0.5";
+			dogg.pause();
+			br2state = "off";
+		}
+	}
+
+	
+	var br3state = "off";
+	br3.onclick = function(){
+		if(br3state == "off"){
+		br3.style.opacity = "1";
+		ca.play();
+		br3state = "on";
+		}else{
+			br3.style.opacity = "0.5";
+			ca.pause();
+			br3state = "off";
+		}
+	}
+
+	
+	var br4state = "off";
+	br4.onclick = function(){
+		if(br4state == "off"){
+		br4.style.opacity = "1";
+		chick.play();
+		br4state = "on";
+		}else{
+			br4.style.opacity = "0.5";
+			chick.pause();
+			br4state = "off";
+		}
+	}
+
+	var br5state = "off";
+	br5.onclick = function(){
+		if(br5state == "off"){
+		br5.src = "money.gif";
+		br5.width = "1200";
+		hip.play();
+		br5state = "on";
+		br5.style.width="1300px";
+		br5.style.left="100px";
+		br5.style.top="10px";			
+		}else{
+	
+			br5.src = "hiphop.gif";
+			br5.width = "280px";	
+			hip.pause();
+			br5state = "off";
+		br5.style.width="280px";
+		br5.style.left="1000px";	
+		br5.style.top="350px";					
+		}
+	}	
+
+
+
+</script>
+	<footer> Copyright 2019, Digital Publishing. Lee Imha. </footer>
+
+</body>
+</html>
